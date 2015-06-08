@@ -25,63 +25,43 @@
     <div class="center-one">
       <table>
         <tr>
-          <th class="table-header">community</th>
+          <th class="table-header"><%= link_to 'dining' %></th>
         </tr>
         <tr>
           <td>
+            <% @dining.subcategories.each do |subcategory| %>
             <ul class="left-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <li><%= link_to subcategory.name %></li>
             </ul>
-            <ul class="right-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-            </ul>
+            <% end %>
           </td>
         </tr>
       </table>
       <table>
         <tr>
-          <th class="table-header">personals</th>
+          <th class="table-header"><%= link_to 'entertainment' %></th>
         </tr>
         <tr>
           <td>
-            <ul>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+             <% @entertainment.subcategories.each do |subcategory| %>
+            <ul class="left-list">
+              <li><%= link_to subcategory.name %></li>
             </ul>
+            <% end %>
           </td>
         </tr>
       </table>
       <table>
         <tr>
-          <th class="table-header">services</th>
+          <th class="table-header"><%= link_to 'retail' %></th>
         </tr>
         <tr>
           <td>
+             <% @retail.subcategories.each do |subcategory| %>
             <ul class="left-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <li><%= link_to subcategory.name %></li>
             </ul>
-            <ul class="right-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-            </ul>
+            <% end %>
           </td>
         </tr>
       </table>
@@ -89,58 +69,29 @@
     <div class="center-two">
       <table>
         <tr>
-          <th class="table-header">housing</th>
+          <th class="table-header"><%= link_to 'activity' %></th>
         </tr>
         <tr>
           <td>
-            <ul>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+            <% @activity.subcategories.each do |subcategory| %>
+            <ul class="left-list">
+              <li><%= link_to subcategory.name %></li>
             </ul>
+            <% end %>
           </td>
         </tr>
       </table>
       <table>
         <tr>
-          <th class="table-header">for sale</th>
+          <th class="table-header"><%= link_to 'travel' %></th>
         </tr>
         <tr>
           <td>
+            <% @travel.subcategories.each do |subcategory| %>
             <ul class="left-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <li><%= link_to subcategory.name %></li>
             </ul>
-            <ul class="right-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+            <% end %>
             </ul>
           </td>
         </tr>
@@ -149,36 +100,15 @@
     <div class="center-three">
       <table>
         <tr>
-          <th class="table-header">jobs</th>
+          <th class="table-header"><%= link_to 'misc' %></th>
         </tr>
         <tr>
           <td>
-            <ul>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+            <% @misc.subcategories.each do |subcategory| %>
+            <ul class="left-list">
+              <li><%= link_to subcategory.name %></li>
+            </ul>
+            <% end %>
             </ul>
           </td>
         </tr>
